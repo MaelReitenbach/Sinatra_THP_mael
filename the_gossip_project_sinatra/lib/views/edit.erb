@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>Potin blabla</title>
+  </head>
+  <body>
+    <h1>PAGE POTIN</h1>
+    <form action='/gossips/edit/<%= params[:id]%>' method='POST'>
+      Saisi ici ton nom :  <input placeholder="<%= gossip.author %>" type='text' name='author'/><br/>
+      Ton potin : <input placeholder="<%= gossip.content %>" type='text' name='content'/><br/>
+      <input type='submit'/>
+    </form>
+    <a href="/">revenir a la page d'accueil</a>
+  </body>
+</html>
